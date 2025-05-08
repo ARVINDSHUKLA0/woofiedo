@@ -53,7 +53,7 @@
     .cusstom-postion-bootom{ 
         position: absolute;
         bottom: 10px;   
-        padding: 0px 30px  !important;
+        padding: 1px 30px  !important;
         background-color: rgba(245, 245, 245, 0.445);
         box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.264);
         width: 100%; 
