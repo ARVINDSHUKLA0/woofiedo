@@ -96,8 +96,7 @@
   transform: rotate(90deg);
   transition: .5s;
 }
-
-/* this is start social-conatiner */
+ 
 .social-conatiner {
   position: relative;
   overflow: hidden;
@@ -123,7 +122,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background-color: #FF553E;
+  background-color: #F38020;
   transition: left 0.5s ease;
   z-index: -1;
 }
@@ -134,11 +133,7 @@
 
 .social-conatiner:hover .social-content {
   color: white;
-}
-
-/* this is end social-conatiner */
-
-/* this is Search & Find Dog start */
+} 
 .custom-postion-imges {
   position: absolute;
   top: 54px;
@@ -165,9 +160,7 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-/* this is Search & Find Dog end */
+} 
 
 .woofiedo-dog-search {
   height: auto;
@@ -177,8 +170,7 @@
   padding: 20px !important;
   box-shadow: 0px 7px 24px 10px rgba(128, 128, 128, 0.438);
 }
-
-/* start paricing card */
+ 
 .custom-pricing-card {
   height: auto;
   width: 100%;
