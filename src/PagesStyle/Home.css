@@ -1,180 +1,339 @@
 .custom-table-list {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding: 12px 0px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 12px 0px;
 }
 
 .cutom-img-width {
-    width: 232px;
+  width: 232px;
 }
 
 .conatiner-imges {
-    flex-wrap: wrap;
-    justify-content: center !important;
-    margin: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 490px;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  margin: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 490px;
 }
 
 .left-side-carcel {
-    display: flex;
-    align-items: center;
-    justify-content: end !important;
-    width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: end !important;
+  width: 300px;
 }
 
 
 .border-horizontal {
-    border: 0.50px solid black;
-    margin-top: 10px;
-    width: 170px;
-    margin-left: 30px;
+  border: 0.50px solid black;
+  margin-top: 10px;
+  width: 170px;
+  margin-left: 30px;
 }
 
 .carcel-height-width {
-    background-color: #F2F2F2;
-    height: 110px;
-    width: 130px;
-    border-radius: 50%;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+  background-color: #F2F2F2;
+  height: 110px;
+  width: 130px;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .award-hover-item:hover .carcel-height-width {
-    background-color: black;
-    color: white;
-    margin-left: 50px;
-    height: 110px;
-    width: 150px;
-    transition: .4s;
+  background-color: black;
+  color: white;
+  margin-left: 50px;
+  height: 110px;
+  width: 150px;
+  transition: .4s;
 }
 
 .award-hover-item:hover .border-horizontal {
-    width: 140px;
-    transition: .4s;
+  width: 140px;
+  transition: .4s;
 }
 
 .imges-set-award {
-    position: absolute;
-    top: 50%;
-    left: 65px;
-    width: 350px;
-    height: 445px;
-    transform: translateX(10%) translateY(-45%) rotate(5deg);
-    transition: all .3s cubic-bezier(.215, .61, .355, 1);
-    opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  width: 350px;
+  height: 445px;
+  transform: translateX(10%) translateY(-45%) rotate(5deg);
+  transition: all .3s cubic-bezier(.215, .61, .355, 1);
+  opacity: 1;
 }
 
 
-.stroked-text {
-    color: white;
-    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.914);
-}
-
-.item-text::before {
-    content: "•";
-    margin-right: 6px;
-
-}
+ 
 
 
 .blog-line {
-    width: 50px;
-    height: 2px;
-    background: black;
-    display: inline-block;
-    margin-right: 15px;
+  width: 50px;
+  height: 2px;
+  background: black;
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .blog-dot {
-    font-size: 18px;
-    margin-left: 4px;
+  font-size: 18px;
+  margin-left: 4px;
 }
 
 .blog-btn-custom {
-    padding: 3px 25px;
-    border-radius: 19px;
-    background-color: transparent;
-    border: 1px solid black;
+  padding: 3px 25px;
+  border-radius: 19px;
+  background-color: transparent;
+  border: 1px solid black;
 }
 
 .rotate {
-    transform: rotate(90deg);
-    transition: .5s;
+  transform: rotate(90deg);
+  transition: .5s;
+}
+
+/* this is start social-conatiner */
+.social-conatiner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 0px 30px 0px rgba(128, 128, 128, 0.212);
+  background-color: rgba(255, 255, 255, 0.113);
+  z-index: 1;
+  border-radius: 20px;
+  padding: 30px 30px;
+  color: black;
+  transition: color 0.5s ease;
+}
+
+.social-conatiner:hover {
+  color: white;
+}
+
+.social-conatiner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #FF553E;
+  transition: left 0.5s ease;
+  z-index: -1;
+}
+
+.social-conatiner:hover::before {
+  left: 0;
+}
+
+.social-conatiner:hover .social-content {
+  color: white;
+}
+
+/* this is end social-conatiner */
+
+/* this is Search & Find Dog start */
+.custom-postion-imges {
+  position: absolute;
+  top: 54px;
+  left: 80px;
+}
+
+.rotate-img {
+  animation: rotate 4s linear infinite;
+}
+
+.custom-width-imge-one {
+  width: 200px;
+}
+
+.custom-width-rotate-img {
+  width: 150px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .content-box {
-    padding: 10px; 
-    margin-left: 5px;
-    transition: all 0.3s ease;
+
+  to {
+    transform: rotate(360deg);
   }
-  
+}
 
+/* this is Search & Find Dog end */
 
+.woofiedo-dog-search {
+  height: auto;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  border-radius: 18px;
+  padding: 20px !important;
+  box-shadow: 0px 7px 24px 10px rgba(128, 128, 128, 0.438);
+}
 
+/* start paricing card */
+.custom-pricing-card {
+  height: auto;
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  border-radius: 20px;
+}
+
+.custom-bg-pricing {
+  background-color: #EEEEEE;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.custom-bg-pricing-orange-color {
+  border-radius: 20px 20px 0px 0px;
+  background-color: #FFB2A7;
+}
+
+/* end procing card */
+.left-side-bg-width{
+  width: 50%;
+}
+.right-side-bg-width{
+  width: 50%;
+}
+.appointment-bg {
+  background-image: url("/assets/img/dog-bg-book-apoiment.jpg");
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top, center;
+}
+.custom-input-warpper{
+  background-color: white;
+  border-radius: 40px !important;
+  margin-bottom: 40px;
+  padding: 40px;
+ 
+}
+.custom-border-svg-input{
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.545);
+}
+.custom-border-svg-input:hover{
+  border: 1px solid #F38020;
+}
+.custom-border-svg-input:hover p {
+  color: #F38020;  
+}
+input{
+  border: 1px solid gray;
+}
+input:focus-visible{
+  outline: none;
+}
+input::placeholder{ 
+  padding: 5px !important; 
+  color: black;
+}
 @media (min-width: 0px) and (max-width: 525px) {
-    .custom-margin-sm{
-        margin-top: 40px;
-    }
-    .custom-my {
-        margin-top: 50px;
-    }
+  .custom-postion-imges {
+    display: none;
+  }
 
-    .cutom-img-width {
-        width: 100%;
-        margin-top: 30px;
-    }
+  .custom-width-imge-one {
+    width: 100px;
+  }
 
-    .conatiner-imges {
-        width: 100%;
-    }
+  .custom-width-rotate-img {
+    width: 100px;
+  }
 
-    .border-horizontal {
-        border: none;
-    }
+  .custom-margin-sm {
+    margin-top: 40px;
+  }
 
-    .award-hover-item:hover .carcel-height-width {
-        background-color: black;
-        color: white;
-        margin-left: 10px;
-        height: 97px;
-        width: 97px;
-        transition: .4s;
-    }
+  .custom-my {
+    margin-top: 50px;
+  }
 
-    .left-side-carcel {
-        display: block;
-        align-items: center;
-        justify-content: end !important;
-        width: 10px;
-    }
+  .cutom-img-width {
+    width: 100%;
+    margin-top: 30px;
+  }
 
-    .carcel-height-width {
-        height: 100px;
-        width: 100px;
-        margin-bottom: 15px;
-    }
+  .conatiner-imges {
+    width: 100%;
+  }
+
+  .border-horizontal {
+    border: none;
+  }
+
+  .award-hover-item:hover .carcel-height-width {
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    height: 97px;
+    width: 97px;
+    transition: .4s;
+  }
+
+  .left-side-carcel {
+    display: block;
+    align-items: center;
+    justify-content: end !important;
+    width: 10px;
+  }
+
+  .carcel-height-width {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+  }
+  .left-side-bg-width{
+    width: 0%;
+  }
+  .right-side-bg-width{
+    width: 99%; 
+    padding: 0px 10px 10px 0px  !important;
+    
+  
+  }
 
 
 }
 
 
-@media (min-width: 526px) and (max-width: 1023px) {
-    .award-hover-item:hover .carcel-height-width {
-        background-color: black;
-        color: white;
-        margin-left: 10px;
-        height: 97px;
-        width: 97px;
-        transition: .4s;
-    }
+@media (min-width: 526px) and (max-width: 1024px) {
+  .left-side-bg-width{
+    width: 0%;
+  }
+  .right-side-bg-width{
+    width: 100%;
+    padding: 50px 40px 40px 25px !important;
+  
+  }
+  .custom-postion-imges {
+    display: none;
+  }
 
-    .carcel-height-width {
-        height: 100px;
-        width: 100px;
-        margin-bottom: 20px;
-    }
+  .award-hover-item:hover .carcel-height-width {
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    height: 97px;
+    width: 97px;
+    transition: .4s;
+  }
+
+  .carcel-height-width {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+  }
 }

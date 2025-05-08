@@ -1,22 +1,32 @@
 import React, { useState } from 'react'
 import '../PagesStyle/Home.css'
 import Navbar from '../Component/Navbar'
-import Banner from '../Component/Banner'
 import ServiceOneimg from '/assets/img/SerivesLeftOne.png'
 import ServiceTwoimg from '/assets/img/SerivesLeftTwo.png'
-import { Link } from 'react-router-dom'
 import ServiceScrollSlider from '../Component/ServiceScrollSlider'
 import AwardsOne from '/assets/img/AwardsOne.jpg'
 import AwardTwo from '/assets/img/AwardsTwo.jpg'
 import AwardThree from '/assets/img/AwardsThree.jpg'
 import Awardfour from '/assets/img/AwardsFour.jpg'
 import AwardFive from '/assets/img/AwardsFive.jpg'
-import ViedoOne from '/assets/video/orbius-video.mp4'
-
-import ImgesScollSlider from '../Component/ImgesScollSlider'
 import ReviewSlider from '../Component/ReviewSlider'
 import BlogImgOne from '/assets/img/blogImg-One.png'
 import Footer from '../Component/Footer'
+import SvgOne from '/assets/img/svg-1.svg'
+import SvgTwo from '/assets/img/svg-2.svg'
+import SvgThree from '/assets/img/svg-3.svg'
+import HomeImgeOne from '/assets/img/Home1.png'
+import FindDogImg from '/assets/img/findDogImg.png'
+import HomeImgesTwo from '/assets/img/Epic-arrow2.png'
+import HomeImgesThree from '/assets/img/epicpaws-ball-toy.png'
+import dogsvgOne from '/assets/img/dogsvg-1.png'
+import Pricingimg from '/assets/img/priceing-img-1.png'
+import Walk from '/assets/img/walk.svg'
+import InputSvgOne from '/assets/img/input-svg-1.svg'
+import InputSvgTwo from '/assets/img/input-svg-2.svg'
+import InputSvgThree from '/assets/img/input-svg-3.svg'
+import InputSvgFour from '/assets/img/input-svg-4.svg'
+import Banner from '../Component/Banner'
 const Home = () => {
 
   const [imegshover, setImgesHover] = useState(AwardsOne)
@@ -30,14 +40,7 @@ const Home = () => {
   const Imgesfunc = (image) => {
     setImgesHover(image)
   }
-  const serives = [
-    { creativeHediing: 'Strategic Planning', creativeArtical: 'I align design with your business goals. I analyze your audience and competition. I develop visual strategies, ensuring consistent brand messaging. I measure results and adapt designs for optimal impact.' },
-    { creativeHediing: 'Design Blueprinting', creativeArtical: 'I translate strategic plans into actionable visual frameworks. This involves creating wireframes, style guides, and mockups to map out design elements and user flows, ensuring a clear and efficient design process.' },
-    { creativeHediing: 'Creative Development', creativeArtical: 'I transform concepts into compelling visuals. I explore diverse styles, experiment with innovative techniques, and refine ideas to deliver unique, impactful designs that capture attention and resonate with your audience.' },
-    { creativeHediing: 'Project Handover:', creativeArtical: 'I deliver comprehensive, organized files with clear documentation, ensuring seamless implementation. I provide style guides, asset packages, and any necessary training, empowering you to effectively utilize the design deliverables.', },
 
-
-  ];
 
 
 
@@ -66,6 +69,343 @@ const Home = () => {
     <>
       <Navbar />
       <Banner />
+
+      <section className='container py-50'>
+        <div className="row m-0 text-center">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mb-2">
+            <div className='social-conatiner social-content'>
+              <img className='img-fluid mb-2' src={SvgOne} width={40} alt="" />
+              <h2 className='text-capitalize mb-2'>safe</h2>
+              <p className='px-lg-4'>your dog will be walked in safe, open space & will retun happy and tired.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mb-2">
+            <div className='social-conatiner social-content'>
+              <img className='img-fluid mb-2' src={SvgTwo} width={40} alt="" />
+              <h2 className='text-capitalize mb-2'>safe</h2>
+              <p className='px-lg-4'>your dog will be walked in safe, open space & will retun happy and tired.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 mb-2">
+            <div className='social-conatiner social-content'>
+              <img className='img-fluid mb-2' src={SvgThree} width={40} alt="" />
+              <h2 className='text-capitalize mb-2'>safe</h2>
+              <p className='px-lg-4'>your dog will be walked in safe, open space & will retun happy and tired.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='container py-5 overflow-hidden'>
+        <div className="row">
+          <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+            <div>
+              <img className='img-fluid' src={HomeImgeOne} alt="" />
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12 col-12 find-dog-img-bg">
+            <div className='d-flex'>
+              <div className='d-lg-block d-none'>
+                <img src={FindDogImg} width={120} alt="" />
+              </div>
+              <div className='my-md-5'>
+                <div className='d-flex align-items-center'>
+                  <button className='border-rounded-50 border-0 main-bg '>
+                    <i className="fa-solid fa-user-nurse text-white"></i>
+                  </button>
+                  <span className='ps-2 '>Trusted Dog Walker</span>
+                </div>
+                <h2>Search & Find Dog Walking Services In Your Area </h2>
+                <p>We provide group and individual daily dogs walking that are tailored to fit you and your dog's needs. During the dog walking booking, your sitter will walk and engage with your dog on a safe route.</p>
+
+                <div className='d-md-flex d-block py-md-4'>
+                  <div>
+                    <p className='m-0'>
+                      <span className='pe-2'><i className="fa-solid fa-user-tie main-color"></i></span>
+                      <span>Professional Service </span>
+                    </p>
+                    <p className='m-0'>
+                      <span className='pe-2'><i className="fa-solid fa-user-tie main-color"></i></span>
+                      <span>GPS Tracking</span>
+                    </p>
+                    <p className='m-0'>
+                      <span className='pe-1'><i className="fa-solid fa-desktop main-color"></i></span>
+                      <span>Online Booking</span>
+                    </p>
+                  </div>
+                  <div className='ps-md-5'>
+                    <p className='m-0'>
+                      <span className='pe-1'><i className="fa-solid fa-award main-color"></i></span>
+                      <span>30 Award Winner</span>
+                    </p>
+                    <p className='m-0'>
+                      <span className=''><i className="fa-solid fa-globe main-color"></i></span>
+                      <span> Top Worldwide</span>
+                    </p>
+                    <p className='m-0'>
+                      <span className='pe-1'><i className="fa-regular fa-star main-color"></i></span>
+                      <span>500+ 5 Star Reviews</span>
+                    </p>
+                  </div>
+                </div>
+                <button className='main-btn'>about us</button>
+                <div className='d-flex align-items-center justify-content-end position-relative mt-50'>
+                  <div className='custom-postion-imges'>
+                    <img className='img-fluid custom-width-imge-one' src={HomeImgesTwo} alt="" />
+                  </div>
+                  <div>
+                    <img className='img-fluid rotate-img custom-width-rotate-img' src={HomeImgesThree} alt="" />
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div className='text-center'>
+          <h2>How does it work?</h2>
+          <p>Booking a dog walker with EpicPaws is easy and safe in three easy steps.</p>
+        </div>
+      </section>
+
+      <section className="container py-md-5">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 text-center item-hover mb-3">
+            <div className="woofiedo-dog-search">
+              <img className="img-fluid dog-image" src={dogsvgOne} width={100} alt="" />
+              <h4>search for a dog walker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 text-center item-hover mb-3">
+            <div className="woofiedo-dog-search">
+              <img className="img-fluid dog-image" src={dogsvgOne} width={100} alt="" />
+              <h4>search for a dog walker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-4 col-12 text-center item-hover mb-3">
+            <div className="woofiedo-dog-search">
+              <img className="img-fluid dog-image" src={dogsvgOne} width={100} alt="" />
+              <h4>search for a dog walker</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className='container'>
+        <div className="row m-0">
+          <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+            <div >
+              <div className='text-end'>
+                <img className='img-fluid' src={Pricingimg} width={300} alt="" />
+              </div>
+              <div className='d-flex align-items-center'>
+                <button className='border-rounded-50 border-0 main-bg '>
+                  <i className="fa-solid fa-user-nurse text-white"></i>
+                </button>
+                <span className='px-2'> Service Packages</span>
+              </div>
+              <h2 className='ps-md-2 py-3'>Flexible and predictable pricing planes for your extended family</h2>
+              <p className='ps-md-2 mb-5'>We provide group and individual daily dogs walking that are tailored to fit you and your dog's needs. During the dog walking booking, your sitter will walk and engage with your dog on a safe.</p>
+              <button className='main-btn ps-md-3'>register now </button>
+
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-12 col-sm-12 col-12 mt-50">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-sm-12 col-12 mt-5 mb-3">
+                <div className='custom-pricing-card'>
+                  <div className='text-center'>
+                    <p className='py-4 custom-bg-pricing'>TRENDING PLAN</p>
+                    <img className='img-fluid my-2 ' src={Walk} width={40} alt="" />
+                    <h5 className='text-capitalize'>solo walks</h5>
+                  </div>
+
+                  <div className='d-flex justify-content-between align-items-center px-2 py-3 mb-3'>
+                    <ul className='m-0 p-0'>
+                      <li className='list-style-none'>1hour</li>
+                      <li className='list-style-none'>45min</li>
+                      <li className='list-style-none'>30min</li>
+                      <li className='list-style-none'>20min</li>
+                    </ul>
+                    <ul className='m-0'>
+                      <li className='list-style-none fw-bold'>$20 per walk</li>
+                      <li className='list-style-none fw-bold'>$18 per walk</li>
+                      <li className='list-style-none fw-bold'>$15 per walk</li>
+                      <li className='list-style-none fw-bold'>$10 per walk</li>
+                    </ul>
+                  </div>
+                  <div className='text-center mt-4 pt-4 pb-5'>
+                    <button className='main-btn'>book kow!</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-12 col-12 mt-2">
+                <div className='custom-pricing-card'>
+                  <div className='text-center'>
+                    <p className='py-4 custom-bg-pricing-orange-color'>TRENDING PLAN</p>
+                    <img className='img-fluid my-2 ' src={Walk} width={40} alt="" />
+                    <h5 className='text-capitalize'>solo walks</h5>
+                  </div>
+
+                  <div className='d-flex justify-content-between align-items-center px-2 py-4'>
+                    <ul className='m-0 p-0'>
+                      <li className='list-style-none'>1hour</li>
+                      <li className='list-style-none'>45min</li>
+                      <li className='list-style-none'>30min</li>
+                      <li className='list-style-none'>20min</li>
+                    </ul>
+                    <ul className='m-0'>
+                      <li className='list-style-none fw-bold'>$20 per walk</li>
+                      <li className='list-style-none fw-bold'>$18 per walk</li>
+                      <li className='list-style-none fw-bold'>$15 per walk</li>
+                      <li className='list-style-none fw-bold'>$10 per walk</li>
+                    </ul>
+                  </div>
+                  <div className='text-center mt-50 pt-4 pb-5'>
+                    <button className='main-btn'>book kow!</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='appointment-bg my-50'>
+        <div className='d-md-flex d-block justify-content-between align-items-center '>
+          <div className='left-side-bg-width'></div>
+          <div className='right-side-bg-width pe-lg-5'>
+            <div className='d-flex align-items-center pt-4'>
+              <button className='border-rounded-50 border-0 main-bg '>
+                <i className="fa-solid fa-user-nurse text-white"></i>
+              </button>
+              <span className='ps-2 text-white  '>Trusted Dog Walker</span>
+            </div>
+            <h2 className='text-white ps-3'>Book Now An Appointment</h2>
+            <div className='custom-input-warpper ms-3'>
+              <p className='font-size-small'>I'm looking for service for my:</p>
+              <input type="checkbox" name="" id="" /> <span className='font-size-small'>Dog </span>
+              <input type="checkbox" name="" id="" /> <span className='font-size-small'>Cat </span>
+              <p className='font-size-small mt-3'>What service do you need?</p>
+              <div className='d-sm-flex d-block align-items-center justify-content-between px-2 text-center'>
+                <div className='custom-border-svg-input mb-3'>
+                  <img className='img-fluid' src={InputSvgOne} width={30} alt="" />
+                  <p className='font-size-small text-capitalize active'>house sitting</p>
+                </div>
+                <div className='custom-border-svg-input mb-3'>
+                  <img className='img-fluid' src={InputSvgTwo} width={30} alt="" />
+                  <p className='font-size-small text-capitalize'>drop-in visits</p>
+                </div>
+                <div className='custom-border-svg-input mb-3'>
+                  <img className='img-fluid' src={InputSvgThree} width={30} alt="" />
+                  <p className='font-size-small text-capitalize'>doggy care</p>
+                </div>
+                <div className='custom-border-svg-input mb-3'>
+                  <img className='img-fluid' src={InputSvgFour} width={30} alt="" />
+                  <p className='font-size-small  '>Dog walking</p>
+                </div>
+              </div>
+              <form action="">
+                <label className='font-size-small' htmlFor="address">What's your address?</label>
+                <input
+                  className='w-100 py-2 rounded-5 font-size-small'
+                  type="text"
+                  id="address"
+                />
+              </form>
+
+              <form action="">
+                <label className="font-size-small" htmlFor="start-date">Which dates do you need?</label>
+                <div className="d-sm-flex d-block">
+                  <input
+                    id="start-date"
+                    className="w-100 py-2 rounded-5 font-size-small mb-3"
+                    type="date"
+                  />
+                  <input
+                    id="end-date"
+                    className="w-100 ms-sm-2 py-2 rounded-5 font-size-small mb-3"
+                    type="date"
+                  />
+                </div>
+              </form>
+
+
+              <form action="">
+                <label className="font-size-small" htmlFor="time1">Which times do you need?</label>
+                <div className="d-sm-flex d-block">
+                  <input
+                    type="text"
+                    id="time1"
+                    className="w-100 py-2 rounded-5 font-size-small mb-3"
+                    placeholder="6am–11am"
+                  />
+                  <input
+                    type="text"
+                    id="time2"
+                    className="ms-sm-2 w-100 py-2 rounded-5 font-size-small mb-3"
+                    placeholder="11am–3pm"
+                  />
+                  <input
+                    type="text"
+                    id="time3"
+                    className="ms-sm-2 w-100 py-2 rounded-5 font-size-small mb-3"
+                    placeholder="3pm–10pm"
+                  />
+                </div>
+              </form>
+
+              <button className='mt-3 main-btn'>submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <ServiceScrollSlider />
+
+      <section className='container-fluid py-lg-5'>
+        <div className='custom-bottom-border  d-flex align-items-center gap-3  my-lg-5  my-md-4 my-sm-4'>
+          <h2 className='font-size-large'>awards</h2>
+          <h5 className='mt-5 d-md-block d-none'>/ notable achievements</h5>
+        </div>
+      </section>
+
+      <section className='custom-margin-sm'>
+        <div className="container-fluid">
+          <div className="row m-0">
+            <div className="col-lg-6 d-lg-block d-none col-md-12 col-sm-12 col-12 ps-4 position-relative">
+              <img className='imges-set-award' src={imegshover} alt="" />
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0">
+              {
+                MainArr.map((Awardsitem, index) => (
+                  <div style={{ cursor: 'pointer' }} key={index} onMouseEnter={() => Imgesfunc(Awardsitem.image)} className='d-flex award-hover-item align-items-center justify-content-between'>
+                    <div className='left-side-carcel'>
+                      <div className='carcel-height-width'>
+                        <h6>{Awardsitem.year}</h6>
+                      </div>
+                      <div className='border-horizontal'></div>
+                    </div>
+                    <div style={{ width: '48%' }}>
+                      <h3>{Awardsitem.SerivesHedding}</h3>
+                      <p>{Awardsitem.titel}</p>
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ReviewSlider />
       <section className='container-fluid'>
         <div className='custom-bottom-border d-flex align-items-center gap-3  my-lg-5  my-md-4 my-sm-4'>
           <h2 className='font-size-large'>  who i am </h2>
@@ -141,74 +481,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <ServiceScrollSlider />
-
-      <section className='container-fluid py-lg-5'>
-        <div className='custom-bottom-border  d-flex align-items-center gap-3  my-lg-5  my-md-4 my-sm-4'>
-          <h2 className='font-size-large'>awards</h2>
-          <h5 className='mt-5 d-md-block d-none'>/ notable achievements</h5>
-        </div>
-      </section>
-
-      <section className='custom-margin-sm'>
-        <div className="container-fluid">
-          <div className="row m-0">
-            <div className="col-lg-6 d-lg-block d-none col-md-12 col-sm-12 col-12 ps-4 position-relative">
-              <img className='imges-set-award' src={imegshover} alt="" />
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12 p-0">
-              {
-                MainArr.map((Awardsitem, index) => (
-                  <div style={{ cursor: 'pointer' }} key={index} onMouseEnter={() => Imgesfunc(Awardsitem.image)} className='d-flex award-hover-item align-items-center justify-content-between'>
-                    <div className='left-side-carcel'>
-                      <div className='carcel-height-width'>
-                        <h6>{Awardsitem.year}</h6>
-                      </div>
-                      <div className='border-horizontal'></div>
-                    </div>
-                    <div style={{ width: '48%' }}>
-                      <h3>{Awardsitem.SerivesHedding}</h3>
-                      <p>{Awardsitem.titel}</p>
-                    </div>
-                  </div>
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className='my-50'>
-        <div className="container-fluid px-lg-4">
-          <video autoPlay muted loop className='w-100 viedo-filter' src={ViedoOne}></video>
-        </div>
-      </section>
-
-      <section>
-        <div className="container-fluid my-100">
-          <div className="row">
-            {
-              serives.map((creativeItem, index) => (
-                <div key={index} className='col-lg-3 col-md-3 col-sm-6 col-12'>
-                  <h2 className='stroked-text fs-1 mb-3'>0{index + 1}</h2>
-                  <h3 className='fw-bold mb-3 item-text'>{creativeItem.creativeHediing}</h3>
-                  <p>{creativeItem.creativeArtical}</p>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
-
-      <ImgesScollSlider />
-      <ReviewSlider />
-
       <section className='container-fluid py-lg-5'>
         <div className='custom-bottom-border  d-flex align-items-center gap-3   my-md-4 my-sm-4'>
           <h2 className='font-size-large'>latest news</h2>
           <h5 className='mt-5 d-md-block d-none'>/ discover the news</h5>
         </div>
       </section>
+
 
       <section className='mb-50 custom-my'>
         <div className="row m-0 p-0 ">

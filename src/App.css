@@ -10,6 +10,31 @@
   .mt-50 {
    margin-top: 50px;
  }
+ .border-rounded-50{
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .main-bg{
+  background-color: #F38020;
+ }
+ .main-color{
+  color: #F38020;
+ }
+ .font-size-small{
+  font-size: 13px;
+ }
+ .main-btn{
+  background-color: #F38020;
+  padding: 10px 25px;
+  border: 0px;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 30px;
+}
  
  .mb-50 {
    margin-bottom: 50px;
@@ -90,6 +115,10 @@
 }
 
 @media (min-width: 0px) and (max-width: 525px) {
+  .main-btn{
+    width: 60% ;
+    font-size: 10px;
+}
   .pt-100{
     padding-top: 30px;
    }
