@@ -121,7 +121,7 @@
      .banner-inner-warper:hover{
         transform: translateX(0px)
      }
-     .custom-height{
+     /* .custom-height{
         height: 150px;
      }
      .custom-height img{
@@ -129,8 +129,11 @@
       width: 100%;
       object-fit: cover;
       object-position: center;
-     }
-     
+     } */
+     .custom-imges-height{
+      height: 300px;
+      width: 100%;
+  } 
 
       
         
