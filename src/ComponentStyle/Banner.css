@@ -116,18 +116,19 @@
         height: 100vh;
         width: 100%;
     } 
-    .imges-banner-warpper{
-        height: 150px;
-    }
-     .imges-banner-warpper img{
-        height: 100%;
-        width: 100%;
-     }
+    
+      
      .banner-inner-warper:hover{
         transform: translateX(0px)
      }
      .custom-height{
         height: 150px;
+     }
+     .custom-height img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
      }
 
         
