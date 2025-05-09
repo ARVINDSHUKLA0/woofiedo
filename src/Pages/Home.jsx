@@ -70,7 +70,7 @@ const Home = () => {
       <Navbar />
       <Banner />
 
-      <section className='container'>
+      <section className='container py-100'>
         <div className="row m-0 text-center">
           <div className="col-lg-4 col-md-4 col-sm-4 col-12 mb-2">
             <div className='social-conatiner social-content'>
