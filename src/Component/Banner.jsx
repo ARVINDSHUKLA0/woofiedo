@@ -5,7 +5,7 @@ import Dogimg from '/assets/img/dog-1.jpg'
 const Banner = () => {
   return ( 
     <>
-      <section>
+      <section className='overflow-hidden'>
           <div className='container  px-2 position-relative'>
               <div className="row my-50">
                   <div className="col-lg-6 col-md-6 col-sm-12 col-12">
