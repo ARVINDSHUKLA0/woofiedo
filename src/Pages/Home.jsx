@@ -325,12 +325,12 @@ const Home = () => {
                 <div className="d-sm-flex d-block">
                   <input
                     id="start-date"
-                    className="w-100 py-2 rounded-5 font-size-small mb-3"
+                    className="w-100 py-2 rounded-5 font-size-small mb-3 ps-2 pe-1"
                     type="date"
                   />
                   <input
                     id="end-date"
-                    className="w-100 ms-sm-2 py-2 rounded-5 font-size-small mb-3"
+                    className="w-100 ms-sm-2 py-2 rounded-5 font-size-small mb-3 ps-2 pe-1"
                     type="date"
                   />
                 </div>
@@ -500,7 +500,7 @@ const Home = () => {
               <h2 className="blog-title fw-bold py-3">techniques for increased productivity</h2>
               <img className='img-fluid' src={BlogImgOne} alt="" />
               <p className='mt-3'>Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus</p>
-              <button className='blog-btn-custom'>read more</button>
+              <button className='custom-border'>read more</button>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -512,7 +512,7 @@ const Home = () => {
               <h2 className="blog-title fw-bold py-3">techniques for increased productivity</h2>
               <img className='img-fluid' src={BlogImgOne} alt="" />
               <p className='mt-3'>Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus</p>
-              <button className='blog-btn-custom'>read more</button>
+              <button className='custom-border'>read more</button>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-6 col-12">
@@ -524,7 +524,7 @@ const Home = () => {
               <h2 className="blog-title fw-bold py-3">techniques for increased productivity</h2>
               <img className='img-fluid' src={BlogImgOne} alt="" />
               <p className='mt-3'>Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus</p>
-              <button className='blog-btn-custom'>read more</button>
+              <button className='custom-border'>read more</button>
             </div>
           </div>
         </div>
