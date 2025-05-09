@@ -20,7 +20,10 @@ const About = () => {
             <Navbar />
             <section className='about-banner-bg text-end'>
                 <div className="">
-                    <span className='text-capitalize'>home</span> <span>/</span> <span className='text-capitalize'>about us </span>
+                    <span className='text-capitalize'>
+                        <Link to="/" className='text-decoration-none-one'>home</Link>
+                    </span> 
+                    <span>/</span> <span className='text-capitalize'>about us </span>
                     <h2 className='text-capitalize fw-bold'>about us</h2>
                 </div>
             </section>

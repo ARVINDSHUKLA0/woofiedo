@@ -94,6 +94,11 @@
    color: black;
    font-weight: 700;
  }
+ .text-decoration-none-one{
+   text-decoration: none;
+   color: black;
+   font-weight: 400;
+ }
  .text-decoration-light-weight{
   text-decoration: none;
   color: black;

@@ -39,9 +39,23 @@
     color: white;
 }
  
+textarea:focus-visible{
+    outline:none !important;
+}
 .custom-border-bootom:focus-visible{
     outline: none;
 }
+.custom-width-contact-one{
+    width: 50%;
+}
+.custom-width-contact-two{
+    width: 50%;
+}
+.conatct-banner-bg{
+    background-color: rgba(128, 128, 128, 0.349);
+    padding: 50px !important;
+  }
+  
 @media (min-width: 0px) and (max-width: 525px) {
     .background-imges{
         height: 147px;
@@ -53,12 +67,28 @@
         margin-bottom: 25px;
         margin-top: 19px;
     }
+    .custom-width-contact-one{
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .custom-width-contact-two{
+        width: 100%;
+    }
     
-}
-@media (min-width: 0px) and (max-width: 525px) {
     .custom-border-bootom{
         width: 100%; 
     
+    }
+}
+@media (min-width: 526px) and (max-width: 768px) {
+    .custom-width-contact-one{
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    .custom-width-contact-two{
+        width: 100%;
     }
  
 }

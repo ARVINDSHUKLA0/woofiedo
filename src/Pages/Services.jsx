@@ -7,13 +7,17 @@ import Walk from '/assets/img/walk.svg'
 import Footer from '../Component/Footer'
 import ServicesTwo from '/assets/img/serivesTwo.jpg'
 import ServicesThree from '/assets/img/serives-Three.jpg'
+import { Link } from 'react-router-dom'
 const Services = () => {
     return (
         <>
             <Navbar />
             <section className='serives-banner-bg text-end'>
                 <div className="">
-                    <span className='text-capitalize'>home</span> <span>/</span> <span className='text-capitalize'>Service </span>
+                    <span className='text-capitalize'>
+                        <Link to="/" className='text-decoration-none-one'>home</Link>
+                    </span>
+                     <span>/</span> <span className='text-capitalize'>Service </span>
                     <h2 className='text-capitalize fw-bold'>Service</h2>
                 </div>
             </section>
