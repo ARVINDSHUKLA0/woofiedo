@@ -26,10 +26,10 @@ const Contact = () => {
         <div className='custom-width-contact-one px-sm-4 mt-50'>
           <h2 className='text-capitalize fw-bold'>Dog walking services</h2>
           Your email address will not be published. Required fields are marked *
-          <div className='d-flex justify-content-between my-4'>
+          <div className='d-sm-flex d-block justify-content-between my-4'>
             <form className='w-100' action="">
               <input
-                className='w-100 py-2 rounded-5 font-size-small '
+                className='w-100 py-2 rounded-5 font-size-small mb-3 '
                 type="text"
                 id="address"
                 placeholder='Name*'
@@ -37,7 +37,7 @@ const Contact = () => {
             </form>
             <form className='w-100' action="">
               <input
-                className='w-100 py-2 rounded-5 font-size-small ms-1'
+                className='w-100 py-2 rounded-5 font-size-small ms-sm-1 mb-3'
                 type="email"
                 id="address"
                 placeholder='Email*'
@@ -45,7 +45,7 @@ const Contact = () => {
             </form>
             <form className='w-100' action="">
               <input
-                className='w-100 py-2 rounded-5 font-size-small ms-2 '
+                className='w-100 py-2 rounded-5 font-size-small ms-sm-2 mb-3 '
                 type="text"
                 id="address"
                 placeholder='Subject*'
