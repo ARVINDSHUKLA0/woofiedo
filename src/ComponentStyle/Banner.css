@@ -131,7 +131,7 @@
       object-position: center;
      }
      .banner-inner-warper{
-      height: 100%; 
+      height: 300px; 
       width: 100%;   
       transition: transform 0.5s ease-in-out;
   
