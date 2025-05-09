@@ -16,7 +16,7 @@ const Navbar = () => {
   const asidebarfun = () => {
     setAsideBar(!asidebar);
   };
-  const showBorderPages = ["/", "/about"];
+  const showBorderPages = ["/"];
   const hasBorder = showBorderPages.includes(location.pathname);
  
   
@@ -52,8 +52,8 @@ const Navbar = () => {
                 <li className={`nav-item ${location.pathname === '/about' ? 'active' : ''}`}>
                   <Link className='text-decoration-none py-lg-5' to="/about">About</Link>
                 </li>
-                <li className={`nav-item ${location.pathname === '/portfolio' ? 'active' : ''}`}>
-                  <Link className='text-decoration-none py-lg-5' to="/portfolio">Portfolio</Link>
+                <li className={`nav-item ${location.pathname === '/services' ? 'active' : ''}`}>
+                  <Link className='text-decoration-none py-lg-5' to="/services">Services</Link>
                 </li>
                 <li className={`nav-item ${location.pathname === '/blog' ? 'active' : ''}`}>
                   <Link className='text-decoration-none py-lg-5' to="/blog">Blog</Link>

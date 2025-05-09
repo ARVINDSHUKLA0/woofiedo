@@ -4,10 +4,12 @@
     height: 2px;
 }
 .custom-border{
-    background-color: transparent;
+    background-color: #F38020;
     padding: 2px 25px 5px 25px;
     border-radius: 25px;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
+    text-transform: capitalize;
 }
  
 
