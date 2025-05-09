@@ -131,6 +131,10 @@
       object-position: center;
      }
 
+     .imges-banner-warpper{
+      height: 0%;
+      width: 0%;
+   }
         
 
 }
