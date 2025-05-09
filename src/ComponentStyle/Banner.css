@@ -103,10 +103,10 @@
         color: black; 
     
     }
-    /* .banner-inner-warper{
+    .banner-inner-warper{
         height: 80% !important; 
         width: 100%;   
-     } */
+     }
      .item-banner-one{
         position: relative;
         left: 0px; 
@@ -130,6 +130,12 @@
       object-fit: cover;
       object-position: center;
      }
+     .banner-inner-warper{
+      height: 100%; 
+      width: 100%;   
+      transition: transform 0.5s ease-in-out;
+  
+   }
 
       
         
