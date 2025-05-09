@@ -27,14 +27,29 @@
  .font-size-small{
   font-size: 13px;
  }
- .main-btn{
+  
+.main-btn {
   background-color: #F38020;
   padding: 10px 25px;
-  border: 0px;
+  border: 0;
   text-transform: capitalize;
   color: white;
-  border-radius: 30px;
+  border-radius: 30px; 
+  animation: btnzoomout 0.8s infinite alternate;
+ 
 }
+@keyframes btnzoomout {
+  0% {
+      transform: scale(.80);
+      transition: .5s;
+    }
+    100% {
+      transform: scale(0.70);
+      transition: .5s;
+    }
+}
+
+
  
  .mb-50 {
    margin-bottom: 50px;
