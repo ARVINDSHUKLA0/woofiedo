@@ -17,24 +17,24 @@ const Banner = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 col-12">
               <div className='custom-imges-height d-flex position-relative'> 
                 <div className='banner-inner-warper mt-100'>
-                  <div className=' bg-custom-one border-banner-one h-50 mb-sm-3 mb-2 position-relative'>
+                  <div className=' bg-custom-one border-banner-one custom-height mb-sm-3 mb-2 position-relative'>
                     <div className='imges-banner-warpper item-banner-one'>
                       <img className='img-fluid border-banner-one' src={Dogimg} alt="" />
                     </div>
                   </div>
-                  <div className=' bg-custom-two border-banner-two h-50 mb-sm-3  position-relative '>
+                  <div className=' bg-custom-two border-banner-two custom-height mb-sm-3  position-relative '>
                     <div className='imges-banner-warpper item-banner-one'>
                       <img className='img-fluid border-banner-two' src={Dogimg} alt="" />
                     </div>
                   </div>
                 </div>
                 <div className='banner-inner-warper ps-lg-5  ps-md-3 ps-3'>
-                  <div className=' bg-custom-three border-banner-one h-50 mb-sm-3 mb-2  position-relative '>
+                  <div className=' bg-custom-three border-banner-one custom-height mb-sm-3 mb-2  position-relative '>
                     <div className='imges-banner-warpper item-banner-one '>
                       <img className='img-fluid border-banner-one' src={Dogimg} alt="" />
                     </div>
                   </div>
-                  <div className=' bg-custom-four border-banner-two h-50 mb-sm-3  position-relative '>
+                  <div className=' bg-custom-four border-banner-two custom-height mb-sm-3  position-relative '>
                     <div className='imges-banner-warpper item-banner-one '>
                       <img className='img-fluid border-banner-two' src={Dogimg} alt="" />
                     </div>
