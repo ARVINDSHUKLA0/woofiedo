@@ -8,6 +8,16 @@
   width: 232px;
 }
 
+.main-height-imges{
+  height: 250px;
+  width: 230px;
+}
+.main-height-imges img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: center;
+}
 .conatiner-imges {
   flex-wrap: wrap;
   justify-content: center !important;
@@ -221,9 +231,14 @@
 .custom-border-svg-input:hover p {
   color: #F38020;  
 }
+.custom-border-svg-input.active{
+  border-color: #F38020 ;
+
+}
 input{
   border: 1px solid gray;
 }
+
 input:focus-visible{
   outline: none;
 }

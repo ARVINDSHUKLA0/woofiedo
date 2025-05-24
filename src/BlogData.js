@@ -1,103 +1,69 @@
-import BlogImgesOne from '/assets/img/photographyOne.jpg';
-import BlogImgesTwo from '/assets/img/photographyTwo.jpg';
-import BlogImgesThree from '/assets/img/photographyThree.jpg';
-import BlogImgesFour from '/assets/img/photographyFour.jpg';
-import BlogImgesFive from '/assets/img/photographyFive.jpg';
-import BlogImgesSix from '/assets/img/photographySix.jpg';
-import BlogImgesSeven from '/assets/img/designOne.jpg';
-import BlogImgesEight from '/assets/img/designTwo.jpg';
-import BlogImgesNav from '/assets/img/designThree.jpg';
+import BlogImgesOne from '/assets/img/PetVaccinationsImg.jpg';
+import BlogImgesTwo from '/assets/img/NutritionPetGrooming.jpg';
+import BlogImgesThree from "/assets/img/Do's EmergencyiMG.webp";
+
 
 const BlogData = [
-       {
-            id: 1,
-            name: "techniques for increased productivity",
-            category: 'photography',
-            image: BlogImgesOne,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
+    {
+        id: 1,
+        title: "Why Regular Pet Vaccinations and Wellness Exams Are Essential",
+        image: BlogImgesOne,
+        date: 'march 28, 2024',
+        SubTitle: 'Why Vaccinations are Non-Negotiable',
+        description: "At Woofie Do, we believe in preventative care to help your pet live a long, healthy life. Regular vaccinations and wellness exams keep your furry friend happy and thriving.",
+        subDecipation: "Think of pet vaccinations as your pet's invisible shield. They protect against a host of dangerous and often life-threatening infectious diseases like Rabies, Distemper, Parvovirus, and more. Without proper vaccination, your beloved companion is highly susceptible to these illnesses, which can lead to severe complications, extensive (and expensive) treatments, or even loss of life. Our team at Woofie Do tailors a vaccination schedule specifically for your pet's age, lifestyle, and risk factors, ensuring they get the most effective protection.",
+        keyfeture: [
+            { BlogHedding: "The Power of the Wellness Exam", blogTitle: "Even if your pet seems perfectly healthy, routine wellness exams are critical. These annual (or bi-annual for older pets) check-ups allow our veterinarians to" },
+            { BlogSubTitle: "Detect Issues Early", BlogSubDecipation: "Many common pet ailments, from dental disease to heart conditions, can go unnoticed in their early stages. Regular exams help us identify potential problems before they become serious" },
+            { BlogSubTitle: "Monitor Growth & Development", BlogSubDecipation: "Especially for puppies and kittens, wellness exams ensure they're growing properly and meeting developmental milestones." },
+            { BlogSubTitle: "Maintain Optimal Health", BlogSubDecipation: "We can provide personalized advice on nutrition, weight management, parasite prevention, and behavioral enrichment, helping your pet thrive." },
+            { BlogSubTitle: "Update Preventative Care", BlogSubDecipation: "This is the perfect time to ensure vaccinations are up-to-date and discuss ongoing parasite control." },
+        ]
 
-       {
-            id: 2,
-            name: " twinkling stars adorn the night sky",
-            category: 'infographics',
-            image: BlogImgesTwo,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
-        
-       {
-            id: 3,
-            name: "ancient ruins whisper tales of bygone eras",
-            category: 'design trends',
-            image: BlogImgesThree,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
+    },
 
-       {
-            id: 4,
-            name: "golden sunbeams dance upon waters",
-            category: 'photography',
-            image: BlogImgesFour,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
+    {
+        id: 2,
+        title: "Woofie Do boosts pet health with proper nutrition and grooming.",
+        image: BlogImgesTwo,
+        date: 'march 28, 2024',
+        SubTitle: 'Fueling Health: The Right Diet Matters',
+        description: "A shiny coat and energetic pet come from more than food and brushing. At Woofie Do, we highlight the power of nutrition and regular grooming in keeping your pet healthy and happy.",
+        subDecipation: "Just like humans, pets need the right fuel to thrive. The vast array of pet foods on the market can be overwhelming, making it hard to know what's truly best. A proper diet can:",
+        keyfeture: [
+            { BlogHedding: "Boost Energy & Vitality", blogTitle: "Providing essential nutrients for playful days and restful nights." },
+            { BlogSubTitle: "Support Organ Function", BlogSubDecipation: ": Helping everything from a strong heart to healthy kidneys." },
+            { BlogSubTitle: "Improve Skin & Coat Health", BlogSubDecipation: "Leading to that coveted glossy fur and fewer skin issues." },
+            { BlogSubTitle: "Manage Weight & Prevent Disease", BlogSubDecipation: "Reducing the risk of obesity-related problems like diabetes and joint pain." },
+            { BlogSubTitle: "Update Preventative Care", BlogSubDecipation: "This is the perfect time to ensure vaccinations are up-to-date and discuss ongoing parasite control." },
+            { ExpertConsultations: "Our expert veterinarians at Woofie Do offer personalized Pet Food & Diet Consultations. We'll assess your pet's age, breed, activity level, and any specific health conditions to recommend a diet that perfectly meets their needs, ensuring they get the right nutrients to flourish." },
+            { GroomingTitle: "The Power of the Paw-fect Groom", GroomingDec: "Grooming is far more than just aesthetics. Regular Pet Grooming at Woofie Do provides numerous health benefits:" },
+            { BlogSubTitle: "Prevents Skin Issues", BlogSubDecipation: "Regular brushing helps distribute natural oils, reduces shedding, and allows for early detection of lumps, bumps, or parasites" },
+            {BlogSubTitle : "Avoids Matting", BlogSubDecipation : "Especially for long-haired breeds, matting can be painful and lead to skin infections. Professional grooming prevents this" },
+            {BlogSubTitle : "BlogSubTitle",BlogSubDecipation : "Nail trims prevent painful overgrowth, while ear cleaning helps prevent infections." },
+            {BlogSubTitle : "Reduces Allergens", BlogSubDecipation : "Regular baths can help reduce dander and allergens in your home." }
+        ]
+    },
 
-       {
-            id: 5,
-            name: "rippling brooks babble over smooth stones",
-            category: 'design trends',
-            image: BlogImgesFive,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
+    {
+        id: 3,
+        title: "Understanding Woofie Do's Emergency and Diagnostic Care",
+        image: BlogImgesThree,
+        date: 'march 28, 2024',
+        SubTitle: '24x7 Emergency Services: Always Here for You',
+        description: '"Emergencies are never easy, but Woofie Do is here with expert care, advanced diagnostics, and compassionate support when you need it most',
+        keyfeture: [
+            { BlogHedding: "The Power of Rapid In-House Diagnostics", blogTitle: "In an emergency, or even when diagnosing a complex illness, time is often of the essence. Our In-House Diagnostics play a crucial role in providing immediate answers. Our clinic is outfitted with state-of-the-art technology, including:" },
+            { BlogSubTitle: "Advanced Bloodwork & Urinalysis", BlogSubDecipation: "Quickly analyzing internal organ function, detecting infections, and assessing overall health." },
+            { BlogSubTitle: "Digital X-rays", BlogSubDecipation: "Providing immediate, high-resolution images to diagnose fractures, identify foreign objects, or assess organ size and position" },
+            { BlogSubTitle: "Ultrasound", BlogSubDecipation: " Offering real-time imaging of internal organs for more detailed assessment of soft tissues and complex conditions." },
+            { GroomingDec: "Having these capabilities on-site means we can perform tests, get results, and formulate a treatment plan much faster than if samples had to be sent out to external labs. This speed can be life-saving in critical situations and provides immense peace of mind." },
+            { GroomingDec: "At Woofie Do, we combine our readiness for emergencies with our advanced diagnostic capabilities to ensure your pet receives the most timely and effective care possible, no matter the situation. We're committed to being your trusted partner, even when every second counts." },
+            { Petemergency: "Facing a pet emergency or have concerns about your pet's health? Don't hesitate. Call Woofie Do immediately or visit our clinic." },
+            
+        ]
+    },
 
-       {
-            id: 6,
-            name: "velvet petals unfold in the sunshine",
-            category: 'infographics',
-            image: BlogImgesSix,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
-
-       {
-            id: 7,
-            name: "majestic eagles soar above lofty peaks",
-            category: 'design trends',
-            image: BlogImgesSeven,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
-
-       {
-            id: 8,
-            name: "twinkling stars adorn the night sky",
-            category: 'infographics',
-            image: BlogImgesEight,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
-
-       {
-            id: 9,
-            name: "ancient ruins whisper tales of bygone eras",
-            category: 'design trends',
-            image: BlogImgesNav,
-            date : 'march 28, 2024',
-            title : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus',
-            description : 'Sed fringilla massa dignissim fringilla dignissim donec faucibus enim vitae ornare gravida phasellus maximus felis sed tristique iaculis nulla tempus arcu vitae orci consequat ac accumsan. Velit conntum suspendisse ut lacinia sem phasellus tristique ante nisl eget consectetur urna interdum ac morbi non egestas odio sed at arcu. Maximus dolor iaculis vehicula eu quis orci in hac habitasse platea dictumst morbi placerat lacus sed pellentesque sagittis quam lacus fringilla massa et fermentum metus justo in arcu. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt. Bellentesque in tempus sem consectetur venenatis urna morbi vitae volutpat metus integer finibus risus mi sed gravida nisi lobortis at proin lacinia ex nec enim bibendum nec interdum arcu pellentesque. Nam purus ligula ommodo id erat eu mollis henrerit augue integer vitae pulvinar enim sed lobortis erat non luctus sodles nunc sit amet sapien. Vel dui pacerat ultricies non non sapien nam id urna dignissim pulvinar erat ut commodo justo nullam aliquam arcu ut lobortis elementum suspendisse risus massa feugiat vitae tincidunt.'
-        },
 ]
 
 export default BlogData

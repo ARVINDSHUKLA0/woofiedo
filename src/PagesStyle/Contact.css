@@ -55,6 +55,9 @@ textarea:focus-visible{
     background-color: rgba(128, 128, 128, 0.349);
     padding: 50px !important;
   }
+.form-padding-inner::placeholder{
+    color: black; 
+}
   
 @media (min-width: 0px) and (max-width: 525px) {
     .background-imges{

@@ -1,11 +1,29 @@
-import React from 'react'
-import Navbar from '../Component/Navbar'
-import '../PagesStyle/Contact.css'
-import ContactBootomImges from '/assets/img/ContactBootomimg.jpg'
-import Footer from '../Component/Footer.jsx'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Navbar from '../Component/Navbar';
+import '../PagesStyle/Contact.css';
+import Footer from '../Component/Footer.jsx';
+import { Link } from 'react-router-dom';
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+  const EnquirySend = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_4b4byfv", "template_mnohi9v", e.target, "lqLmmKH0FVHz2HUyz")
+      .then(
+        (result) => {
+          toast.success("Enquiry sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          toast.error("Failed to send enquiry: " + error.text);
+        }
+      );
+  };
 
   return (
     <>
@@ -26,38 +44,52 @@ const Contact = () => {
         <div className='custom-width-contact-one px-sm-4 mt-50'>
           <h2 className='text-capitalize fw-bold'>Dog walking services</h2>
           Your email address will not be published. Required fields are marked *
-          <div className='d-sm-flex d-block justify-content-between my-4'>
-            <form className='w-100' action="">
+
+          <form className='w-100' onSubmit={EnquirySend}>
+            <div className='d-sm-flex d-block justify-content-between my-4'>
               <input
-                className='w-100 py-2 rounded-5 font-size-small mb-3 '
+                className='w-100 py-2 rounded-5 font-size-small mb-3'
                 type="text"
-                id="address"
-                placeholder='Name*'
+                name="name"
+                placeholder="Name*"
+                required
               />
-            </form>
-            <form className='w-100' action="">
               <input
                 className='w-100 py-2 rounded-5 font-size-small ms-sm-1 mb-3'
                 type="email"
-                id="address"
-                placeholder='Email*'
+                name="email"
+                placeholder="Email*"
+                required
               />
-            </form>
-            <form className='w-100' action="">
               <input
-                className='w-100 py-2 rounded-5 font-size-small ms-sm-2 mb-3 '
-                type="text"
-                id="address"
-                placeholder='Subject*'
+                className='w-100 py-2 rounded-5 font-size-small ms-sm-2 mb-3'
+                type="tel"
+                name="phone"
+                placeholder="Phone Number*"
+                required
               />
-            </form>
+            </div>
 
-          </div>
-          <form action="">
-            <textarea className='w-100 rounded-5 my-3 font-size-small' name="" rows={7} id=""></textarea>
+            <input
+              className='w-100 py-2 rounded-5 font-size-small mb-3'
+              type="text"
+              name="address"
+              placeholder="Address*"
+              required
+            />
+
+            <textarea
+              className='w-100 rounded-5 my-3 font-size-small form-padding-inner'
+              name="message"
+              rows={7}
+              placeholder="Your Message*"
+              required
+            ></textarea>
+
+            <button type="submit" className='main-bg border-0 px-3 py-1 mb-5 text-white rounded-5'>Submit Now</button>
           </form>
-          <button className='main-btn'>submit kow</button>
         </div>
+
         <div className="container-fluid my-50 custom-width-contact-two">
           <iframe
             title="Office Location"
@@ -72,10 +104,22 @@ const Contact = () => {
         </div>
       </section>
 
+      <ToastContainer
+        position="top-right"
+        autoClose={1000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
-
+export default Contact;

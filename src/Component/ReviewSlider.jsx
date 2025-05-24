@@ -31,9 +31,9 @@ const ReviewSlider = () => {
         };
 
         const ReviwArr = [
-            {description : 'uipsum dolor sit amet consectetur adipiscing elit sed ac eros metus integer fermentum metus nec euismod nulla nullam nec metus nunc phasellus eu fermentum lectus vivamus vel quam', imges :ReviwimgOne, name : 'jenny smith', department  : 'art director'},
-            {description : 'uipsum dolor sit amet consectetur adipiscing elit sed ac eros metus integer fermentum metus nec euismod nulla nullam nec metus nunc phasellus eu fermentum lectus vivamus vel quam', imges : ReviwimgTwo, name : 'ryan taylor', department  : 'copy writer'},
-            {description : 'uipsum dolor sit amet consectetur adipiscing elit sed ac eros metus integer fermentum metus nec euismod nulla nullam nec metus nunc phasellus eu fermentum lectus vivamus vel quam', imges : ReviwimgThree,  name : 'ashley perez', department  : 'evnet planner'},
+            {description : 'I absolutely love Woofie-Do! Their team is so kind and caring, and they really understand what pets need. My dog always comes back happy and relaxed after their grooming sessions. Highly recommend for anyone looking for quality pet care!', imges :ReviwimgOne, name : 'jenny smith', department  : 'art director'},
+            {description : 'Woofie-Do provides excellent pet services! From dog walking to daycare, they’re reliable and always treat my pet like family. The staff is friendly and professional, and I feel confident leaving my pet in their care. Definitely my go-to for all pet needs!', imges : ReviwimgTwo, name : 'ryan taylor', department  : 'copy writer'},
+            {description : 'Great experience with Woofie-Do! The team is attentive and responsive, and they truly care about the well-being of every pet. Their services are affordable and flexible, which is perfect for busy pet parents. Would recommend to anyone wanting the best for their furry friends!', imges : ReviwimgThree,  name : 'ashley perez', department  : 'evnet planner'},
         ]
   return (
     <>

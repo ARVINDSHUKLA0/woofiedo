@@ -14,32 +14,48 @@ export default function ServiceScrollSlider() {
 
     const dataArr = [
         {
-            title: "Identity",
-            description: "I've developed complete brand identities for startups and established businesses, including logo design, brand guidelines, and visual language that effectively communicates their values and mission."
+            title: "Surgery",
+            description: "Trust our skilled veterinary team for your pet’s surgical needs. From routine spays and neuters to advanced procedures, we ensure safety and comfort with modern equipment, pre-anesthetic screening, and attentive post-op care"
+         },
+        {
+            title: "Pet Vaccination",
+            description: "Keep your pet safe with our personalized vaccination programs, tailored to their age, lifestyle, and risk. We’ll guide you through essential vaccines and create a schedule to protect against preventable diseases."
         },
         {
-            title: "Website",
-            description: "I've created responsive and engaging websites that enhance user experience, drive conversions, and establish a strong online presence for clients in various industries."
+            title: "Pet Grooming",
+            description: " Professional grooming keeps your pet healthy and comfortable. We offer baths, trims, nail clipping, and more in a calm, caring environment to prevent skin issues and keep them looking their best."
         },
         {
-            title: "Marketing",
-            description: "I've designed impactful print and digital marketing materials, including brochures, flyers, social media graphics, and digital ads, that have helped clients increase brand awareness and drive sales."
+            title: "In-House Diagnostics",
+            description: "Our advanced in-house diagnostics—blood tests, X-rays, ultrasound, and more—provide fast, accurate results, helping us quickly diagnose and treat your pet, often during the same visit."
         },
         {
-            title: "Packaging",
-            description: "  I've created unique and visually appealing packaging designs that have helped products capture consumer attention and increase sales"
+            title: "Pet Food & Diet Consultation",
+            description: "Proper nutrition is key to your pet’s health. Our vets provide expert diet advice tailored to needs like weight, allergies, or medical conditions—keeping your pet strong and healthy. "
         },
         {
-            title: "Infographics",
-            description: "I've designed complex data and information into clear and compelling infographics for both print and digital use, improving information retention and engagement."
+            title: "Pet IPD (In-Patient Department / Hospitalization)",
+            description: " Our In-Patient Department offers 24/7 care for pets needing ongoing medical attention. With constant monitoring and expert support, we ensure a safe, comfortable recovery environment. "
         },
         {
-            title: "Engaging Graphics",
-            description: "I create impactful graphics for social media, web, and ads, driving audience interaction and brand presence. This includes animated and interactive visuals, optimized for seamless online experiences."
+            title: "Pet Transportation",
+            description: "Our pet transportation service makes vet visits easy and stress-free, providing safe, comfortable transport to and from our clinic for appointments, surgeries, or emergencies."
         },
         {
-            title: "Print",
-            description: "I design brochures, catalogs, and marketing materials, focusing on paper, finishing, and layout for high-quality, lasting impressions."
+            title: " Pet Cremation",
+            description: " We offer compassionate pet cremation services with individual or communal options, ensuring your beloved companion is honored with dignity and care. "
+        },
+        {
+            title: "Pet Registration",
+            description: "  Ensuring your pet is properly registered is an important step for their safety and identification. We can assist you with the necessary paperwork and procedures for pet registration, helping you comply with local regulations and increasing the chances of reunification should your pet ever go missing."
+        },
+        {
+            title: "Consultation",
+            description: "Our experienced veterinarians are here to offer expert advice and address all your concerns regarding your pet's health, behavior, or general well-being. Whether it's a routine check-up, a specific health issue, or just guidance on pet care, our consultations provide valuable insights and personalized recommendations."
+        },
+        {
+            title: "24x7 Emergency Services",
+            description: "Emergencies can happen anytime. Our 24/7 emergency services ensure your pet gets immediate, expert care for accidents, sudden illnesses, or urgent conditions."
         },
     ]
 
@@ -118,7 +134,7 @@ export default function ServiceScrollSlider() {
                                 transform: `scale(${isScrolling ? 0.9 : 1})`,
                             }}>
                             <small className="mb-3 fw-bold">0{index + 1}</small>
-                            <h2 className="service-hedding text-warp" >{value.title}</h2>
+                            <h4 className="service-hedding text-warp" >{value.title}</h4>
                             <p className="service-description text-warp" >{value.description}</p>
                         </div>
                     ))}

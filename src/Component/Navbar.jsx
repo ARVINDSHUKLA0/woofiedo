@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../ComponentStyle/Navbar.css';
 import Logo from '/assets/img/logo.png';
-import { Link } from 'react-router-dom';
-import AsideImges from '/assets/img/asideLgNav.jpg';
+import { Link } from 'react-router-dom'; 
 import { useLocation } from 'react-router-dom';
+import AsidebarPet from '/assets/img/PetVaccinationsImg.jpg'
 
 const Navbar = () => {
   const [asidebar, setAsideBar] = useState(false);
@@ -42,7 +42,9 @@ const Navbar = () => {
                   </button>
                 </div>
                 <div className='ps-3 py-3'>
+                  <Link to="/">
                   <img src={Logo} width={100} alt="" />
+                  </Link>
                 </div>
               </div>
               <ul className="d-lg-flex m-0 p-0 gap-5">
@@ -70,42 +72,27 @@ const Navbar = () => {
               </button>
             </div>
             {asidebar && <div onClick={asidebarfun} className='item-warrper-remove'></div>}
-
             <aside className='d-none d-lg-block'>
               <button onClick={asidebarfun} className='bg-dark text-white border-0 custom-round-btn'>
                 <i className="fa-solid fa-bars-staggered"></i>
               </button>
               <div className={`asidebarOpen ${asidebar ? 'open' : ''}`}>
                 <div className='text-end'>
-                  <button onClick={asidebarfun} className='bg-white border-0 pe-4 pt-4'>
+                  <button onClick={asidebarfun} className='bg-white border-0 pe-4'>
                     <i className="fa-solid fa-xmark fs-3"></i>
                   </button>
                 </div>
                 <div className='d-flex justify-content-center align-items-center'>
                   <div className='pt-5'>
+                    <Link to="/">
                     <img className='mb-3' src={Logo} width={110} alt="" />
-                    <p className='pb-3'>Curabitur sagittis lectus quis purus <br /> interua vulputate justo hererit asellus <br /> ullcorper sem vel tellus ultrices ac <br /> suscipit orci</p>
-                    <ul className='d-flex gap-2 p-0 pb-4 '>
-                      <li className='list-style-none'>
-                        <Link className='text-decoration-none'>fb</Link>
-                      </li>
-                      <li className='list-style-none '>
-                        <Link className='text-decoration-none'>tw</Link>
-                      </li>
-                      <li className='list-style-none'>
-                        <Link className='text-decoration-none'>In</Link>
-                      </li>
-                      <li className='list-style-none'>
-                        <Link className='text-decoration-none'>pi</Link>
-                      </li>
-                    </ul>
-                    <img className='mb-4' src={AsideImges} alt="" />
+                    </Link>
+                    <p className='pb-3'>Woofie-Do provides expert, gentle <br /> care for your pet, offering everything <br /> from routine check-ups to advanced <br /> treatments to keep your furry family <br /> member healthy and happy.</p>
+                    <img className='mb-4 img-fluid  ' src={AsidebarPet} alt="" />
                     <div>
-                      <h4 className='py-2'>north america</h4>
                       <p>
-                        123 maple avenue, houston, tx 56034 <br />
-                        +1 (888) 765 4326 / 765 4327 <br />
-                        info@domainname.com
+                       Jaipuriya Plaza, sector-26, noida <br />
+                       care@woofieDo.com
                       </p>
                     </div>
                   </div>
